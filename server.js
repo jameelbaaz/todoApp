@@ -8,6 +8,7 @@ let port = process.env.port
 if(port==null || port==""){
   port=3000
 }
+
 app.use(express.static('public'))
 
 let connectionString = 'mongodb+srv://todoAppUser:Rizjam23432786!@cluster0-ib9wp.mongodb.net/todoApp?retryWrites=true&w=majority'
